@@ -1,0 +1,133 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>JOB Portal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<link rel="stylesheet" type="text/css" href="master.css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+   <div class="meta">
+		<div class="metalinks">
+			<a href="#"><img src="images/meta1.gif" alt="" width="15" height="14" /></a>
+			<a href="#"><img src="images/meta2.gif" alt="" width="17" height="14" /></a>
+			<a href="#"><img src="images/meta3.gif" alt="" width="17" height="14" /></a>
+			<a href="#"><img src="images/meta4.gif" alt="" width="15" height="14" /></a>
+		</div>
+			<p>Jobseeker :<a href="JobseekerLogin.aspx">Log in</a> or Recruiters:  <a href="RecruiterLogin.aspx">Log in</a></p>																																													
+	</div>
+	<div id="header">
+		<a href="Home.aspx" class="logo"><img src="images/logo.jpg" alt="setalpm" width="149" height="28" /> </a>
+		<span class="slogan">Your Key to Success</span>
+		<ul id="menu">
+			<li><a href="Home.aspx">Home</a></li>
+			<li><a href="job_search.aspx">Search Jobs</a></li>
+			<li><a href="#">Contact US</a></li>
+		</ul>
+		<img src="images/bigpicture.jpg" alt="" width="892" height="303" />
+      </div>  
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div id="content">
+<div class="search">
+		 
+		</div>
+        <div id="blocks">																																																																																																																													
+			<div class="block">
+				<img src="images/title1.gif" alt="" width="214" height="29"><br>
+				<img src="images/map.jpg" alt="" width="214" height="160"><br>
+				<a href="#" class="more"><img src="images/morey.jpg" alt="" width="105" height="27"></a>
+			</div>
+			<div class="block">
+				<img src="images/title2.gif" alt="" width="214" height="29"><br>
+				<p class="red_text">Maecenas hendrerit, massa ac laoreet iaculipede mnisl ullamcorper- massa, cosectetuer feipsum eget pede. Proin nunc. Donec nonummy, tellus er sodales enim, in tincidun- mauris in odio. Massa ac laoreet iaculipede nisl ullamcorpermassa, ac consectetuer feipsum eget pede.  Proin nunc. Donec massa.</p>
+				<a href="#" class="more"><img src="images/morer.jpg" alt="" width="105" height="27"></a>
+			</div>
+			<div class="block">
+				<img src="images/title3.gif" alt="" width="214" height="29"><br>
+				<ul id="list">
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Consectetuer feipsum eget</a></li>
+				</ul>
+				<a href="#" class="more"><img src="images/moreg.jpg" alt="" width="106" height="27"></a>
+			</div>
+			<div class="block">
+				<img src="images/title4.gif" alt="" width="214" height="29"><br>
+				<p class="gray_text">Maecenas hendrerit, massa ac laoreet iaculipede mnisl ullamcorper- massa, cosectetuer feipsum eget pede. Proin nunc. Donec nonummy, tellus er sodales enim, in tincidun- mauris in odio. </p>
+				<form action="#">
+					<input type="text" class="signup input" value="Your E-mail Address">
+					<a href="#" class="submit"><img src="images/submit.jpg" alt="" width="69" height="25"></a>
+				</form>
+			</div>
+		</div>
+       <div id="info">
+			<div>
+				<img src="images/title5.gif" alt="" width="160" height="26">
+				<ul>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/title6.gif" alt="" width="160" height="26">
+				<ul>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/title7.gif" alt="" width="160" height="26">
+				<ul>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/title8.gif" alt="" width="160" height="26">
+				<ul>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+				</ul>
+			</div>
+            </div> 
+		</div>
+     <div id="footer">
+		Copyright ©. All rights reserved. Design by <a href="http://www.bestfreetemplates.info" target="_blank" title="Online Job Portal"> Our Team</a> 																																																						 
+	</div>
+    </div>
+    </form>
+</body>
+</html>

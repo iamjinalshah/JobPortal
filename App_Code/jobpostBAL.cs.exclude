@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data;
+/// <summary>
+/// Summary description for jobpost
+/// </summary>
+public class jobpost
+{
+	
+    public string job_name;
+    public string vacancy;
+    public DateTime start_date;
+    public DateTime end_date;
+    public string salary_given;
+
+    public jobpost()
+	{
+		//
+		// TODO: Add constructor logic here
+		//
+	}
+
+    DAL objDAL = new DAL();
+    string query = "";
+
+    public void isJobPost()
+    {
+        {
+        query = "exec insert_jobseeker_edu_sp @education_name='"+education_name +"',@qualification='"+ qualification +"',@passing_year='"+passing_year+"',@institute_name='"+institute_name +"'";
+        objDAL.Execute(query);
+    }
+}

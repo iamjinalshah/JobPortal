@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Job Portal
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="job_login.aspx" Text="Login"/>
+                        <asp:MenuItem NavigateUrl="registrtn.aspx" Text="Registration"/>
+                         <asp:MenuItem NavigateUrl="regis_edu.aspx" Text="Register Education"/>
+                          <asp:MenuItem NavigateUrl="experience.aspx" Text="Experience"/>
+                           <asp:MenuItem NavigateUrl="recruiter.aspx" Text="Recruiter"/>
+                            <asp:MenuItem NavigateUrl="job_apply.aspx" Text="Job Apply"/>
+                             <asp:MenuItem NavigateUrl="job_post.aspx" Text="Jobpost"/>
+                              <asp:MenuItem NavigateUrl="jobseekar_prof.aspx" Text="Jobseeker Professional"/>
+                               <asp:MenuItem NavigateUrl="job_category.aspx" Text="Job Category"/>
+                                <asp:MenuItem NavigateUrl="skill.aspx" Text="Skill"/>
+                                 <asp:MenuItem NavigateUrl="city.aspx" Text="City"/>
+                                  <asp:MenuItem NavigateUrl="state.aspx" Text="State"/>
+                                   <asp:MenuItem NavigateUrl="country.aspx" Text="Country"/>
+                                    <asp:MenuItem NavigateUrl="resume.aspx" Text="Resume"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

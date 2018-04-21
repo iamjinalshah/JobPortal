@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="jobportal" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\jobportal.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tbl_jobseeker" Member="Tbl_jobseekers">
+    <Type Name="Tbl_jobseeker">
+      <Column Name="Js_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Email_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pwd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Mname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Country_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="State_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="City_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Contact_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dob" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Blood_group" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postal_address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Total_exper" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sque_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ans" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.insertTbl_jobseeker" Method="insertTbl_jobseeker">
+    <Parameter Name="Email_id" Parameter="email_id" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Pwd" Parameter="pwd" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Fname" Parameter="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Lname" Parameter="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Country_id" Parameter="country_id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="State_id" Parameter="state_id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="City_id" Parameter="city_id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Contect_no" Parameter="contect_no" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Dob" Parameter="dob" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Blood_group" Parameter="blood_group" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Postal_address" Parameter="postal_address" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Total_expr" Parameter="total_expr" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Sque_id" Parameter="sque_id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Ans" Parameter="ans" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertTbl_jobseeker" Method="insertTbl_jobseeker1">
+    <Parameter Name="Email_id" Parameter="email_id" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Pwd" Parameter="pwd" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Fname" Parameter="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Lname" Parameter="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Country_id" Parameter="country_id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="State_id" Parameter="state_id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="City_id" Parameter="city_id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Contect_no" Parameter="contect_no" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Dob" Parameter="dob" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Blood_group" Parameter="blood_group" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Postal_address" Parameter="postal_address" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Total_expr" Parameter="total_expr" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Sque_id" Parameter="sque_id" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Ans" Parameter="ans" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

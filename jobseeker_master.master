@@ -1,0 +1,101 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="jobseeker_master.master.cs" Inherits="jobseeker_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+   <title>JOB Portal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div class="meta">
+		<div class="metalinks">
+			<a href="#"><img src="images/meta1.gif" alt="" width="15" height="14" /></a>
+			<a href="#"><img src="images/meta2.gif" alt="" width="17" height="14" /></a>
+			<a href="#"><img src="images/meta3.gif" alt="" width="17" height="14" /></a>
+			<a href="#"><img src="images/meta4.gif" alt="" width="15" height="14" /></a>
+		</div>
+		<p>Jobseeker: <a href="JobseekerLogin.aspx">Log in</a> or <a href="#">Find out more</a></p>																																															
+	</div>
+	<div id="header">
+		<a href="Home.aspx" class="logo"><img src="images/logo.jpg" alt="setalpm" width="149" height="28" /> </a>
+		<span class="slogan">Your Key to Success</span>
+		<ul id="menu">
+			<li><a href="Home.aspx">Home</a></li>
+			<li><a href="job_search.aspx">Search Jobs</a></li>
+            <li><a href="jobseekerRegi.aspx">Register</a></li>
+            <li><a href="location.aspx">Location</a></li>
+			
+			<li><a href="contactUs.aspx">Contact Us</a></li>
+		</ul>
+		
+      </div>  
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    
+        </asp:ContentPlaceHolder>
+         <div id="content">      
+       <div id="info">
+			<div>
+				<img src="images/title5.gif" alt="" width="160" height="26">
+				<ul>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/title6.gif" alt="" width="160" height="26">
+				<ul>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/title7.gif" alt="" width="160" height="26">
+				<ul>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/title8.gif" alt="" width="160" height="26">
+				<ul>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Massa ac laoreet iaculipede</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+					<li><a href="#">Maecenas hendrerit</a></li>
+					<li><a href="#">Convallis nonummy tellus</a></li>
+					<li><a href="#">In tincidunt mauris</a></li>
+				</ul>
+			</div>
+            </div> 
+		</div>
+         
+     <div id="footer">
+		Copyright ©. All rights reserved. Design by <a href="http://www.bestfreetemplates.info" target="_blank" title="Online Job Portal"> Our Team</a> 																																																						 
+	</div>
+  
+    </form>
+</body>
+</html>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="jobportaldb" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OS-PC;Initial Catalog=jobportaldb;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="jobportaldbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_state" Member="tbl_states">
+    <Type Name="tbl_state">
+      <Column Name="state_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="state_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_sque" Member="tbl_sques">
+    <Type Name="tbl_sque">
+      <Column Name="sque_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sque" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_country" Member="tbl_countries">
+    <Type Name="tbl_country">
+      <Column Name="country_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="country_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_city" Member="tbl_cities">
+    <Type Name="tbl_city">
+      <Column Name="city_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="city_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="state_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_expr" Member="tbl_exprs">
+    <Type Name="tbl_expr">
+      <Column Name="expr_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="js_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="company_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="contact_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="contact_no" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="country_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="state_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="city_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="post" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="from_date" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="to_date" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_education" Member="tbl_educations">
+    <Type Name="tbl_education">
+      <Column Name="js_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="degree" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="university" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="percentage" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="passing_year" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_resumefile" Member="tbl_resumefiles">
+    <Type Name="tbl_resumefile">
+      <Column Name="rs_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rs_file_path" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="js_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_job_type" Member="tbl_job_types">
+    <Type Name="tbl_job_type">
+      <Column Name="job_type_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="job_type_name" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_jobseeker" Member="tbl_jobseekers">
+    <Type Name="tbl_jobseeker">
+      <Column Name="js_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="email_id" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="pwd" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="mname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="country_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="state_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="city_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="contact_no" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="dob" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="blood_group" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="postal_address" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="total_expr" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sque_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="answer" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="flag" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_job" Member="tbl_jobs">
+    <Type Name="tbl_job">
+      <Column Name="job_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="employer_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="min_exp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="min_sal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="max_sal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="education" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="de_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="job_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="post_date" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="validity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="job_dis" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_employer" Member="tbl_employers">
+    <Type Name="tbl_employer">
+      <Column Name="employer_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="email_id" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="pwd" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="company_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="contact_no" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="logo" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="tagline" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="cdiscription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="country_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="state_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="city_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sque_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="answer" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="flag" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.insertexpr" Method="insertexpr">
+    <Parameter Name="js_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="company_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="contact_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="contact_no" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="address" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="country_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="state_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="city_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="post" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="from_date" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="to_date" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.inserteducation" Method="inserteducation">
+    <Parameter Name="js_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="degree" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="university" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="percentage" Type="System.Double" DbType="Float" />
+    <Parameter Name="passing_year" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertresume" Method="insertresume">
+    <Parameter Name="rs_file_path" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="js_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updatejobseeker" Method="updatejobseeker">
+    <Parameter Name="js_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="mname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="address" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="country_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="state_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="city_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="contact_no" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="dob" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="blood_group" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="postal_address" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="total_expr" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateeducation" Method="updateeducation">
+    <Parameter Name="js_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="degree" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="university" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="percentage" Type="System.Double" DbType="Float" />
+    <Parameter Name="passing_year" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateexpr" Method="updateexpr">
+    <Parameter Name="js_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="company_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="contact_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="contact_no" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="address" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="country_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="state_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="city_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="post" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="from_date" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="to_date" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertjobseeker" Method="insertjobseeker">
+    <Parameter Name="email_id" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="pwd" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="mname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="address" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="country_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="state_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="city_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="contact_no" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="dob" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="blood_group" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="postal_address" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="total_expr" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sque_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="answer" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="flag" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertpost" Method="insertpost">
+    <Parameter Name="employer_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="min_exp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="min_sal" Type="System.Int32" DbType="Int" />
+    <Parameter Name="max_sal" Type="System.Int32" DbType="Int" />
+    <Parameter Name="education" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="de_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="job_type" Type="System.Int32" DbType="Int" />
+    <Parameter Name="post_date" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="validity" Type="System.Int32" DbType="Int" />
+    <Parameter Name="job_dis" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertemployeer" Method="insertemployeer">
+    <Parameter Name="email_id" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="company_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="pwd" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="address" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="country_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="state_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="city_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="contact_no" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="logo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="tagline" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="cdiscription" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="sque_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="answer" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateemployerprofile1" Method="updateemployerprofile1">
+    <Parameter Name="employer_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="email_id" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="company_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="contact_no" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="logo" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="tagline" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="cdiscription" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="address" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="country_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="state_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="city_id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
