@@ -4,14 +4,6 @@
 The Project, titled “Job Portal “comprise of the development of website that contains various facilities and services for different users.
 At present, there is a job-crisis and it’s very hard to find jobs for employees. Even if the employees are having good talent, they suffer in finding the right job. Also that is not easy for the recruiters to recruit perfect employees what they exactly want. Some employees are employed, but not at the place where they really should be. So, this job portal helps the employees to find job vacancies appropriately online. Then recruiters view their profile from database and contact if they expect from those employees to be suitable for particular vacancy.
 
-When the candidates after registration then candidate get confirmation mail.
- If candidate need a job then first must be login registration then after login searching a job.
- Jobseeker can Search the job his/her qualification.
- Maintain job seeker and job recruiter records.
- Maintain uploaded resumes.
- Maintain job posting details and generate various reports.
- There are no banners for advertisement on the site.
- This system can run only on Windows platform.
- Supported only in SQL database.
- Supportive language is only English.
+Prerequesit
 
+Software Requirements:Microsoft Visual Studio 2010, SQL Server 2008 
